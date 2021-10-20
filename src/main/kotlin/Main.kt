@@ -1,13 +1,22 @@
 fun main(args: Array<String>) {
-    var Citys= mutableListOf("  RIYADH " , "Alofuf" , " UMLAJ")
-    println(Citys)
+    //creat a list of int 5 numbers
+    var numbers= mutableListOf(3,5, 7,9,11)
+    println(numbers)
 
-    Citys.addAll(0 , listOf("ALMADINAH","ABHA"))
-    println(Citys)
-    Citys[3]="ALHOFUF"
-    println(Citys)
-for(index in 0 until  Citys.size){
-    println("$index-${Citys[index]}")
+    //updet the 3th elment to 12
+    numbers[2]=12
+    println(numbers)
+//check if the 12 is existing
+    val number= if (numbers.containsAll(listOf(12))) {
+        "Good."
+    } else {
+        "Ok."
+    }
+    println(number)
+    //delete the elment
+    numbers.removeAt(2)
+    println(numbers)
 
-}
+    //print the list
+    println("St.${numbers}")
 }
